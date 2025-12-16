@@ -1,4 +1,9 @@
 import streamlit as st
+import os
+from openai import OpenAI
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+import streamlit as st
 from openai import OpenAI
 
 # ---------- PAGE ----------
@@ -45,4 +50,3 @@ if st.button("🚀 Start Learning"):
             answer = response.choices[0].message.content
             st.success("📘 Explanation")
             st.write(answer)
-clean openai auth fix
