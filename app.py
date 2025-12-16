@@ -45,3 +45,4 @@ if st.button("🚀 Start Learning"):
             answer = response.choices[0].message.content
             st.success("📘 Explanation")
             st.write(answer)
+clean openai auth fix
